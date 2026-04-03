@@ -1,0 +1,95 @@
+.card
+{
+    padding: 25px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.95);
+    color: #222;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 220px;
+}
+
+/* Dark mode */
+.container.dark .card
+{
+    background: #1e293b;
+    color: #eee;
+}
+
+/* Hover effect */
+.card:hover
+{
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* Text */
+.card h2
+{
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.card p
+{
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* Grade badge */
+.grade
+{
+    display: inline-block;
+    margin-top: 12px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+/* Grade colors */
+.grade-A { background: #22c55e; color: white; }
+.grade-B { background: #f59e0b; color: white; }
+.grade-C { background: #ef4444; color: white; }
+
+/* Buttons container */
+.actions
+{
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Buttons */
+.actions button
+{
+    border: none;
+    padding: 10px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Edit button */
+.actions button:first-child
+{
+    background: #3b82f6;
+    color: white;
+}
+
+/* Delete button */
+.actions button:last-child
+{
+    background: #ef4444;
+    color: white;
+}
+
+/* Button hover */
+.actions button:hover
+{
+    transform: scale(1.1);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.3);
+}
+
